@@ -1,0 +1,29 @@
+.sidebar-container{
+  .el-menu{
+    border-right: 0;
+  }
+  .scrollbar-wrapper{
+    overflow-x: hidden !important;
+  }
+
+  // &::-webkit-scrollbar {
+  //   width:5px;
+  //   height:1px;
+  // }
+  // &::-webkit-scrollbar-track {
+  //   background-color: $subMenuBg;
+  // }
+  // &::-webkit-scrollbar-thumb {
+  //   border-radius: 2px;
+  //   background-color: $menuText;
+  // } 
+  & .nest-menu .el-submenu .el-submenu__title,
+  & .nest-menu .submenu-title-noDropdown{
+    background:$subMenuBg !important;
+  }
+
+  & .nest-menu .el-submenu .el-submenu__title:hover,
+  & .nest-menu .submenu-title-noDropdown:hover{
+    background:$subMenuHover !important;
+  }
+}
